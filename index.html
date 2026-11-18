@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>快乐流星雨 Meteor Shower Joy · Privacy Policy / 隐私政策</title>
+<style>
+  :root{
+    --deep:#13101F; --indigo:#1C1832;
+    --neon1:#F65FC8; --neon2:#A76DF4; --neon3:#53DCE9;
+    --text:#D9D4EE; --muted:#9A93BC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:linear-gradient(180deg,#0A0E18 0%,var(--deep) 40%,var(--indigo) 100%);
+    color:var(--text);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Roboto,sans-serif;
+    line-height:1.75; min-height:100vh;
+  }
+  .star{position:fixed;border-radius:50%;background:#fff;opacity:.55;pointer-events:none;animation:tw 3s ease-in-out infinite alternate}
+  @keyframes tw{from{opacity:.15}to{opacity:.7}}
+  .wrap{max-width:860px;margin:0 auto;padding:64px 24px 96px}
+  header{text-align:center;margin-bottom:56px}
+  .logo{width:84px;height:84px;margin:0 auto 20px;border-radius:50%;
+    border:3px solid transparent;
+    background:linear-gradient(var(--deep),var(--deep)) padding-box,
+      linear-gradient(120deg,var(--neon1),var(--neon2),var(--neon3)) border-box;
+    position:relative}
+  .logo::after{content:"✦";position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+    font-size:26px;color:#A9F7FF;text-shadow:0 0 10px var(--neon3),0 0 22px var(--neon3)}
+  h1{font-size:30px;background:linear-gradient(90deg,#fff,#BFEFFF);
+    -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
+  .sub{color:var(--neon1);font-size:15px;letter-spacing:1px;text-shadow:0 0 12px rgba(246,95,200,.5)}
+  h2{font-size:20px;color:#fff;margin:44px 0 14px;padding-left:14px;
+    border-left:4px solid var(--neon2);text-shadow:0 0 10px rgba(167,109,244,.45)}
+  .card{background:rgba(28,24,50,.55);border:1px solid rgba(167,109,244,.25);
+    border-radius:16px;padding:24px 28px;margin-bottom:16px}
+  p,li{font-size:15px;color:var(--text)}
+  ul{padding-left:22px;margin:8px 0}
+  li{margin:6px 0}
+  strong{color:#fff}
+  .en p,.en li{color:var(--muted);font-size:14px}
+  .en strong{color:var(--text)}
+  .en{border-top:1px dashed rgba(167,109,244,.3);padding-top:8px;margin-top:10px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid rgba(167,109,244,.3);padding:8px 12px;text-align:left}
+  th{color:var(--neon3);font-weight:600}
+  a{color:var(--neon3);text-decoration:none}
+  footer{margin-top:64px;text-align:center;color:var(--muted);font-size:13px}
+  .badge{display:inline-block;margin:0 6px 8px;padding:4px 14px;border-radius:999px;
+    border:1px solid rgba(83,220,233,.4);color:var(--neon3);font-size:13px}
+  .top{background:rgba(246,95,200,.12);border:1px solid rgba(246,95,200,.35);border-radius:12px;
+    padding:14px 20px;margin-bottom:28px;text-align:center;color:#FFD9F2;font-size:14px}
+</style>
+</head>
+<body>
+<script>
+  for(let i=0;i<70;i++){const s=document.createElement('div');s.className='star';
+    const z=Math.random()*2+1;s.style.width=z+'px';s.style.height=z+'px';
+    s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';
+    s.style.animationDelay=(Math.random()*3)+'s';document.body.appendChild(s);}
+</script>
+<div class="wrap">
+  <header>
+    <div class="logo"></div>
+    <h1>快乐流星雨 · Meteor Shower Joy</h1>
+    <div class="sub">陪你去看流星雨 · Watch the stars with you</div>
+    <p style="margin-top:14px">
+      <span class="badge">Privacy Policy</span><span class="badge">隐私政策</span>
+    </p>
+  </header>
+
+  <div class="top">本政策说明我们收集哪些信息、如何使用以及你如何控制自己的数据。<br>
+  This policy explains what data we collect, how we use it, and how you can control it.</div>
+
+  <h2>一、我们收集的信息（中文）</h2>
+  <div class="card">
+    <ul>
+      <li><strong>位置信息（粗略）</strong>：仅当你打开观星相关页面时，使用系统定位获取你所在的城市级位置，用于计算当地流星可见度、月相与天气。位置数据不与你的账号绑定，也不会上传保存你的精确坐标。</li>
+      <li><strong>账号资料</strong>：如果你选择创建账号，我们会保存你的昵称与头像编号（不含真实姓名、手机号）。登录凭证由第三方认证服务（Supabase Auth）处理。</li>
+      <li><strong>你主动创建的内容</strong>：观星记录（记忆星空打卡）、日记/心语、许愿弹幕、社区帖子。这些内容仅保存在你的账号下，社区帖子按你的选择对其他用户可见。</li>
+      <li><strong>购买信息</strong>：如果你购买会员，购买凭证由 Google Play / Apple 应用商店处理，我们只保存用于验证权益的匿名订单标识，<strong>不收集支付卡号</strong>。</li>
+      <li><strong>设备与日志</strong>：应用版本、设备型号等基本诊断信息，用于修复崩溃与改进体验，不用于广告追踪。</li>
+    </ul>
+    <table>
+      <tr><th>第三方服务</th><th>用途</th><th>链接</th></tr>
+      <tr><td>Supabase</td><td>账号与云数据存储</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+      <tr><td>Google Play Billing</td><td>应用内购买</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+      <tr><td>Open-Meteo</td><td>天气预报数据</td><td><a href="https://open-meteo.com/en/privacy">open-meteo.com/en/privacy</a></td></tr>
+    </table>
+  </div>
+
+  <h2>二、数据的使用与保护（中文）</h2>
+  <div class="card">
+    <ul>
+      <li>数据仅用于提供应用功能（观星预报、记录同步、社区、会员权益验证），<strong>不会出售、不会用于广告</strong>。</li>
+      <li>数据传输全程使用 HTTPS 加密；云端数据按账号隔离并受访问策略保护。</li>
+      <li><strong>删除数据</strong>：你可以在应用内「我的 → 删除账号」一键注销并删除云端全部数据；也可以发邮件至下方邮箱请求删除，我们将在 7 个工作日内处理。</li>
+      <li>本应用不面向 13 岁以下儿童收集数据。</li>
+    </ul>
+  </div>
+
+  <h2>1. What We Collect (English)</h2>
+  <div class="card">
+    <div class="en">
+      <ul>
+        <li><strong>Coarse location</strong>: only to calculate meteor visibility, moon phase and weather for your area. Your precise coordinates are never stored or linked to your account.</li>
+        <li><strong>Account profile</strong>: nickname and avatar index only (no real name, no phone number). Authentication is handled by Supabase Auth.</li>
+        <li><strong>User content</strong>: stargazing records, journal entries, wish messages and community posts you choose to create. Community posts are visible to other users by your choice.</li>
+        <li><strong>Purchases</strong>: processed by Google Play / Apple. We store only an anonymous receipt identifier to validate membership. We never see your card number.</li>
+        <li><strong>Device &amp; logs</strong>: basic diagnostics (app version, device model) to fix crashes. No ad tracking, no data sale.</li>
+      </ul>
+      <p><strong>Data deletion</strong>: use "Delete Account" inside the app (My Page), or email us. We will remove all cloud data within 7 business days. This app is not directed at children under 13. Transfers are encrypted via HTTPS.</p>
+    </div>
+  </div>
+
+  <h2>三、联系我们 / Contact</h2>
+  <div class="card">
+    <p>邮箱 / Email：<strong>zhangpeizhe333@gmail.com</strong></p>
+    <p style="margin-top:8px;color:var(--muted);font-size:13px">生效日期 / Effective date: 2026-11-18 · 开发者 / Developer: Happy Perry</p>
+  </div>
+
+  <footer>© 2026 Happy Perry · 快乐流星雨 Meteor Shower Joy</footer>
+</div>
+</body>
+</html>
