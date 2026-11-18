@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>快乐流星雨 Meteor Shower Joy · 账号删除 Delete Account</title>
+<style>
+  :root{
+    --deep:#13101F; --indigo:#1C1832;
+    --neon1:#F65FC8; --neon2:#A76DF4; --neon3:#53DCE9;
+    --text:#D9D4EE; --muted:#9A93BC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:linear-gradient(180deg,#0A0E18 0%,var(--deep) 40%,var(--indigo) 100%);
+    color:var(--text);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Roboto,sans-serif;
+    line-height:1.75; min-height:100vh;
+  }
+  .star{position:fixed;border-radius:50%;background:#fff;opacity:.55;pointer-events:none;animation:tw 3s ease-in-out infinite alternate}
+  @keyframes tw{from{opacity:.15}to{opacity:.7}}
+  .wrap{max-width:860px;margin:0 auto;padding:64px 24px 96px}
+  header{text-align:center;margin-bottom:56px}
+  .logo{width:84px;height:84px;margin:0 auto 20px;border-radius:50%;
+    border:3px solid transparent;
+    background:linear-gradient(var(--deep),var(--deep)) padding-box,
+      linear-gradient(120deg,var(--neon1),var(--neon2),var(--neon3)) border-box;
+    position:relative}
+  .logo::after{content:"✦";position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+    font-size:26px;color:#A9F7FF;text-shadow:0 0 10px var(--neon3),0 0 22px var(--neon3)}
+  h1{font-size:30px;background:linear-gradient(90deg,#fff,#BFEFFF);
+    -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
+  .sub{color:var(--neon1);font-size:15px;letter-spacing:1px;text-shadow:0 0 12px rgba(246,95,200,.5)}
+  h2{font-size:20px;color:#fff;margin:44px 0 14px;padding-left:14px;
+    border-left:4px solid var(--neon2);text-shadow:0 0 10px rgba(167,109,244,.45)}
+  .card{background:rgba(28,24,50,.55);border:1px solid rgba(167,109,244,.25);
+    border-radius:16px;padding:24px 28px;margin-bottom:16px}
+  p,li{font-size:15px;color:var(--text)}
+  ol,ul{padding-left:24px;margin:8px 0}
+  li{margin:8px 0}
+  strong{color:#fff}
+  .en p,.en li{color:var(--muted);font-size:14px}
+  .en strong{color:var(--text)}
+  .en{border-top:1px dashed rgba(167,109,244,.3);padding-top:8px;margin-top:10px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid rgba(167,109,244,.3);padding:8px 12px;text-align:left}
+  th{color:var(--neon3);font-weight:600}
+  a{color:var(--neon3);text-decoration:none}
+  footer{margin-top:64px;text-align:center;color:var(--muted);font-size:13px}
+  .badge{display:inline-block;margin:0 6px 8px;padding:4px 14px;border-radius:999px;
+    border:1px solid rgba(83,220,233,.4);color:var(--neon3);font-size:13px}
+  .top{background:rgba(246,95,200,.12);border:1px solid rgba(246,95,200,.35);border-radius:12px;
+    padding:14px 20px;margin-bottom:28px;text-align:center;color:#FFD9F2;font-size:14px}
+  .step{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;
+    background:linear-gradient(120deg,var(--neon1),var(--neon2));color:#fff;font-size:13px;margin-right:8px}
+</style>
+</head>
+<body>
+<script>
+  for(let i=0;i<70;i++){const s=document.createElement('div');s.className='star';
+    const z=Math.random()*2+1;s.style.width=z+'px';s.style.height=z+'px';
+    s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';
+    s.style.animationDelay=(Math.random()*3)+'s';document.body.appendChild(s);}
+</script>
+<div class="wrap">
+  <header>
+    <div class="logo"></div>
+    <h1>快乐流星雨 · Meteor Shower Joy</h1>
+    <div class="sub">账号删除 · Delete Account</div>
+    <p style="margin-top:14px">
+      <span class="badge">开发者 / Developer: zhangpeizhe333</span>
+      <span class="badge">联系邮箱 / Contact: zhangpeizhe333@gmail.com</span>
+    </p>
+  </header>
+
+  <div class="top">你可以随时删除自己的账号，删除立即生效且不可恢复。<br>
+  You may delete your account at any time. Deletion takes effect immediately and is irreversible.</div>
+
+  <h2>一、如何删除账号（中文）</h2>
+  <div class="card">
+    <ol>
+      <li><span class="step">1</span>打开「快乐流星雨」App，并登录你的账号。</li>
+      <li><span class="step">2</span>点击底部导航栏的<strong>「我的」</strong>。</li>
+      <li><span class="step">3</span>点击<strong>「我的账号」</strong>。</li>
+      <li><span class="step">4</span>点击<strong>「删除账号」</strong>，并在弹出的二次确认中点击「确认删除」。</li>
+    </ol>
+    <p style="margin-top:12px">删除立即生效，无需等待，也无需联系客服。如果你无法访问 App（例如忘记了密码），也可以发邮件至
+    <a href="mailto:zhangpeizhe333@gmail.com">zhangpeizhe333@gmail.com</a>，注明你的账号名，我们会在 <strong>7 天内</strong>为你手动删除。</p>
+
+    <table>
+      <tr><th>数据类型</th><th>处理方式</th></tr>
+      <tr><td>账号名（用户 ID）与登录凭证</td><td>立即删除</td></tr>
+      <tr><td>账号资料（昵称、头像编号等）</td><td>立即删除</td></tr>
+      <tr><td>与账号绑定的收藏、偏好设置等数据</td><td>立即删除</td></tr>
+      <tr><td>服务器安全日志</td><td>仅保留最长 90 天后自动删除</td></tr>
+    </table>
+    <p>除上述安全日志外，我们不保留任何可识别你个人身份的数据。游客模式下使用产生的本地数据不与任何账号关联，卸载 App 即被清除。</p>
+  </div>
+
+  <h2>2. How to Delete Your Account (English)</h2>
+  <div class="card en">
+    <ol>
+      <li><span class="step">1</span>Open "Meteor Shower Joy" and sign in to your account.</li>
+      <li><span class="step">2</span>Tap the <strong>"Profile"</strong> tab in the bottom navigation.</li>
+      <li><span class="step">3</span>Tap <strong>"My Account"</strong>.</li>
+      <li><span class="step">4</span>Tap <strong>"Delete Account"</strong> and confirm in the dialog.</li>
+    </ol>
+    <p style="margin-top:12px">Deletion takes effect immediately, with no waiting period and no need to contact support. If you cannot access the app (e.g. you forgot your password), email
+    <a href="mailto:zhangpeizhe333@gmail.com">zhangpeizhe333@gmail.com</a> with your account name and we will delete it manually within <strong>7 days</strong>.</p>
+
+    <table>
+      <tr><th>Data type</th><th>Handling</th></tr>
+      <tr><td>Account name (user ID) and credentials</td><td>Deleted immediately</td></tr>
+      <tr><td>Profile data (nickname, avatar index, etc.)</td><td>Deleted immediately</td></tr>
+      <tr><td>Favorites and preferences linked to the account</td><td>Deleted immediately</td></tr>
+      <tr><td>Server security logs</td><td>Retained up to 90 days, then deleted automatically</td></tr>
+    </table>
+    <p>Except for the security logs above, we retain no data that can identify you. Local data generated in guest mode is not linked to any account and is removed when you uninstall the app.</p>
+  </div>
+
+  <footer>
+    快乐流星雨 Meteor Shower Joy ·
+    <a href="/meteor-shower-site/">隐私政策 Privacy Policy</a> ·
+    zhangpeizhe333@gmail.com
+  </footer>
+</div>
+</body>
+</html>
